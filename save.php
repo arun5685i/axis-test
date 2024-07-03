@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $conn->close();
         
         // Redirect to a new page with the ID in the URL
-        header("Location: tok.php?id=" . $last_id);
+        header("Location: tok.html?id=" . $last_id);
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
